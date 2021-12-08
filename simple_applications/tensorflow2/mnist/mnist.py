@@ -57,6 +57,7 @@ def main():
                       optimizer = keras.optimizers.SGD(),
                       steps_per_execution=100)
         model.fit(ds, steps_per_epoch=2000, epochs=4)
+        model.save('/outputs/trained-model/my-trained-model')
 
 if __name__ == '__main__':
     main()
